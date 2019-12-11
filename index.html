@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html onclick="clickHandler(this, event)">
+	<head>
+		<script>
+			function clickHandler(target, e)
+			{
+				document.getElementById('log').value =
+					'target = ' + target.tagName + 
+					'; client = (' + e.clientX + ', ' + e.clientY + ')' +
+					'; offset = (' + e.offsetX + ', ' + e.offsetY + ')' +
+					'\n';
+			}
+		</script>
+	</head>
+	<input id="log" style="width: 500px" />
+</html>
